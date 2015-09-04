@@ -1,12 +1,10 @@
 var myFirebaseRef = new Firebase("https://vivid-inferno-3459.firebaseio.com/");
 
-// myFirebaseRef.createUser({
-//   email    : "bobtony@firebase.com",
-//   password : "correcthorsebatterystaple"
-// }, function(error, userData) {
-//   if (error) {
-//     console.log("Error creating user:", error);
-//   } else {
-//     console.log("Successfully created user account with uid:", userData.uid);
-//   }
-// });
+var ref = new Firebase("https://vivid-inferno-3459.firebaseio.com");
+ref.authWithOAuthPopup("twitter", function(error, authData) {
+  if (error) {
+    console.log("Login Failed!", error);
+  } else {
+    console.log("Authenticated successfully with payload:", authData);
+  }
+});
