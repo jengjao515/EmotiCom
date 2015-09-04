@@ -5,4 +5,7 @@ class UsersController < ApplicationController
 
 	def create
 	end
+
+	def twitter
+	end
 end
