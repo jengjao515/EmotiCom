@@ -1,1 +1,16 @@
-<h1>Signup</h1>
+<div class="row">
+	<div class="col-md-7">
+		<h1>Signup</h1>
+			<%= form_for @user, url: {action: "create"} do |f| %>
+				<div class="form-group">
+					<label for="signup-email">Email</label>
+					<input type="email" class="form-control" placeholder="Email" id="signup-email">
+				</div>
+				<div class="form-group">
+					<label for="signup-password">Password</label>
+					<input type="password" class="form-control" placeholder="password" id="signup-password">
+				</div>
+				 <button type="submit" class="btn btn-primary">Submit</button>
+			<% end %>
+	</div>
+</div>
