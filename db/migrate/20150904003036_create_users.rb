@@ -5,7 +5,6 @@ class CreateUsers < ActiveRecord::Migration
       t.string :name
       t.string :password
       t.string :location
-      t.string :email
       t.string :uid
       t.string :avatar
 
