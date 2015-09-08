@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   root 'home#index'
   #for FireBase Login
-  post 'twitter' => 'users#twitter'
+  get 'logout' => 'users#logout'
 
   resources :users
 end
