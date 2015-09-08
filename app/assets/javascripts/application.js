@@ -17,6 +17,5 @@
 //= require firebase
 
 $(document).on("page:change", function() {
-  var ref = new Firebase("https://vivid-inferno-3459.firebaseio.com");
   ouathLogin();
 });
