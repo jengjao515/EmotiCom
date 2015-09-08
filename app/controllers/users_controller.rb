@@ -1,11 +1,12 @@
 class UsersController < ApplicationController
 	def new
 		@user = User.new
+		user_info = params['twitter']['cachedUserProfile'] if params['twitter']
+		# if user_info
+
+		# end
 	end
 
-	def create
-	end
-
-	def twitter
+	def show
 	end
 end
