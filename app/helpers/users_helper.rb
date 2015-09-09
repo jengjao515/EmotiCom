@@ -9,4 +9,11 @@ module UsersHelper
 		return user		
 	end
 
+	def self.no_ouath
+		user = User.where(username: params['username']).first_or_initialize
+		user.name = params['name']
+		user.password = params['password']
+		return user
+	end
+
 end
