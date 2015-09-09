@@ -7,16 +7,10 @@ class UsersController < ApplicationController
 
 	def create
 		profile_info = params['twitter'] if params['twitter']
-
+		
 		if profile_info
-			p "***************"
-			p params['twitter']
-			p params['uid']
-		p "**************more "
 			uid = params['uid']
 			user = UsersHelper.find_user(profile_info, uid)
-			p "***************after_helper"
-			p user
 		elsif find_user = User.find_by(email: params['user']['email'])
 			find_user 
 			user = find_user
@@ -28,6 +22,7 @@ class UsersController < ApplicationController
       session[:user_id] = user.id
       redirect_to root_path
     else
+    	@errors = "Login information incorrect."
 			render 'new'
 		end
 	end
