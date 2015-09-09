@@ -1,0 +1,31 @@
+<div class="row">
+	<div class="col-md-6">
+		<h1>Login</h1>
+		<div class="form-group">
+			<%= form_for @user do |f| %>
+				<%= f.label :email %>:
+				<%= f.email_field :email, class: 'form-control', placeholder: "yourhandle@site.com" %>
+				<%= f.label :password %>:
+				<%= f.password_field :password, class: 'form-control', placeholder: "Password" %>
+				<br/><%= f.submit "Login", class: "btn btn-primary" %>
+			<% end %>
+		</div>
+		<p><a href="#" class="btn btn-info" id="twitterLogin">Login with Twitter</a></p>
+	</div>
+	<div class="col-md-6">
+		<h1>Signup</h1>
+		<div class="form-group">
+	 		<%= form_for @user do |f| %>
+      	<%= f.label :name %>:
+        <%= f.text_field :name, class: 'form-control', placeholder: "ex. John Smith" %>
+        <%= f.label :username %>:
+        <%= f.text_field :username, class: 'form-control', placeholder: "yourname1231" %>
+        <%= f.label :email %>:
+        <%= f.email_field :email, class: 'form-control', placeholder: "john@smith.com" %>
+        <%= f.label :password %>:
+        <%= f.password_field :password, class: 'form-control', placeholder: "password" %>
+        <br/><%= f.submit "Signup", class: "btn btn-warning" %>
+      <% end %>
+		</div>
+	</div>
+</div>
