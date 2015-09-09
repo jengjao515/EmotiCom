@@ -5,6 +5,7 @@ module UsersHelper
 		user.username = profile_info['username']
 		user.name = profile_info['displayName']
 		user.avatar = profile_info['profileImageURL']
+		user.password_digest = "fakepassword"
 		user.location = profile_info['cachedUserProfile']['location']	
 		return user		
 	end
