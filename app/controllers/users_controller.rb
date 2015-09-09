@@ -7,10 +7,20 @@ class UsersController < ApplicationController
 
 	def create
 		profile_info = params['twitter'] if params['twitter']
+
 		if profile_info
+			p "***************"
+			p params['twitter']
+			p params['uid']
+		p "**************more "
 			uid = params['uid']
 			user = UsersHelper.find_user(profile_info, uid)
-		else
+			p "***************after_helper"
+			p user
+		elsif find_user = User.find_by(email: params['user']['email'])
+			find_user 
+			user = find_user
+    else
 			user = User.new(user_params)
 		end
 
@@ -18,7 +28,7 @@ class UsersController < ApplicationController
       session[:user_id] = user.id
       redirect_to root_path
     else
-			redirect_to new_user_path
+			render 'new'
 		end
 	end
 
