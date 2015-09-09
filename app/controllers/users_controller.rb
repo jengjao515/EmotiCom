@@ -11,7 +11,7 @@ class UsersController < ApplicationController
 			uid = params['uid']
 			user = UsersHelper.find_user(profile_info, uid)
 		else
-			user = UsersHelper.no_ouath(params)
+			user = User.new(user_params)
 		end
 
 		if user && user.save
@@ -34,6 +34,6 @@ class UsersController < ApplicationController
 
   private
   def user_params
-    params.require(:user).permit(:name, :email, :password, :password_confirmation)
+    params.require(:user).permit(:name, :username, :email, :password, :password_confirmation)
   end
 end

@@ -2,12 +2,12 @@
 	<div class="col-md-6">
 		<h1>Login</h1>
 		<div class="form-group">
-			<%= form_for :user do |f| %>
+			<%= form_for @user do |f| %>
 				<%= f.label :email %>:
 				<%= f.email_field :email, class: 'form-control', placeholder: "yourhandle@site.com" %>
 				<%= f.label :password %>:
 				<%= f.password_field :password, class: 'form-control', placeholder: "Password" %>
-				<%= f.submit "Login!", class: "login btn" %>
+				<br/><%= f.submit "Login", class: "btn btn-primary" %>
 			<% end %>
 		</div>
 		<p><a href="#" class="btn btn-info" id="twitterLogin">Login with Twitter</a></p>
@@ -24,9 +24,7 @@
         <%= f.email_field :email, class: 'form-control', placeholder: "john@smith.com" %>
         <%= f.label :password %>:
         <%= f.password_field :password, class: 'form-control', placeholder: "password" %>
-        <%= f.label :password_confirmation %>:
-        <%= f.password_field :password_confirmation, class: 'form-control', placeholder: "same password" %>
-        <%= f.submit "Signup!" %>
+        <br/><%= f.submit "Signup", class: "btn btn-warning" %>
       <% end %>
 		</div>
 	</div>
