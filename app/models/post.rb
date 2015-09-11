@@ -1,4 +1,5 @@
 class Post < ActiveRecord::Base
   belongs_to :user
-  has_one :emotion
+  has_many :post_emotions
+  has_many :emotions, through: :post_emotions
 end
