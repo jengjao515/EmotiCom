@@ -6,6 +6,7 @@ _Current_
 * Ruby on Rails
 * Firebase
 * Twitter API
+* Bootstrap
 
 _Future_
 * GoogleMaps API
@@ -15,6 +16,5 @@ _Future_
 ![alt text](public/schema.png "Schema Design")
 
 #Wireframes
-![alt text](public/splash-page.png "Splash Page")
-![alt text](public/userhomepage.png "User Homepage")
+![alt text](public/splash-page.png "Splash Page") ![alt text](public/userhomepage.png "User Homepage")
 ![alt text](public/mood-page.png "Create a Post")
