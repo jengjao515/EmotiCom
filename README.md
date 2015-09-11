@@ -35,3 +35,8 @@ _Future_
 * As a user, I want to add friends who also use Emoticom.
 * As a user, I want to see my friend's emoticom posts and their mood fluctuations.
 ```
+###Future Goals
+```
+* Create a mobile-app version
+* Decoupled
+```
