@@ -3,14 +3,18 @@ Emoticom is a web application where users can post their 'moods' that includes a
 
 ###Technologies
 _Current_
-``` * Ruby on Rails
+```
+* Ruby on Rails
 * Firebase
 * Twitter API
-* Bootstrap ```
+* Bootstrap
+```
 
 _Future_
-``` * GoogleMaps API
-* D3.js ``` 
+```
+* GoogleMaps API
+* D3.js
+```
 
 ###Schema
 ![alt text](public/schema.png "Schema Design")
