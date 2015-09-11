@@ -25,3 +25,13 @@ _Future_
 ![alt text](public/mood-page.png "Create a Post")
 
 ###User Stories
+```
+* As a user, I want to login/logout via Twitter.
+* As a user, I want to login/logout through the website.
+* As a user, I want to post an emoticon with my emotion.
+* As a user, I want to see my timeline of emotions.
+* As a user, I want to see my mood fluctuations throughout the day.
+* As a user, I want to post my emoticom post to Twitter.
+* As a user, I want to add friends who also use Emoticom.
+* As a user, I want to see my friend's emoticom posts and their mood fluctuations.
+```
