@@ -1,1 +1,7 @@
 <h1>Create a Post</h1>
+
+<%= form_for @post do |f| %>
+	<%= f.label :content %>
+	<%= f.text_field :content, placeholder: "I am feeling like this because ..." %>
+	<%= f.submit %>
+<% end %>
