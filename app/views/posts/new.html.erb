@@ -1,9 +1,15 @@
 <h1>Create a Post</h1>
 
+<% @emotions.each do |emotion| %>
+	<img src="<%=emotion.image_url%>"/>
+<% end %>
+
 <%= form_for @post do |f| %>
 	<%= f.label :content %>
 	<%= f.text_field :content, placeholder: "I am feeling like this because ..." %>
-	<%= f.label :mood %>
-	<%= f.text_field :mood %>
+	<%= f.label :rating %>
+	<%= f.text_field :rating %>
+	<%= f.label :description %>
+	<%= f.text_field :description %>
 	<%= f.submit %>
 <% end %>

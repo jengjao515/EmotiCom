@@ -2,6 +2,7 @@ class PostsController < ApplicationController
 	def new
 		@post = Post.new
 		@user = User.where(id: current_user.id).first
+		@emotions = Emotion.all
 	end
 
 	def create
@@ -11,12 +12,8 @@ class PostsController < ApplicationController
 
   private
   def post_params
-    params.require(:post).permit(:content, :user_id)
+    params.require(:post).permit(:content, :user_id, :rating, :description)
   end
-
 
 end
 
-#@post.emotions [image_url]
-# @post.post_emotions shows all relationships
-#1f600 #1f637
