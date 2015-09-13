@@ -17,6 +17,17 @@
 
 </head>
 <body>
+<nav class="navbar navbar-dark bg-inverse">
+  <%= link_to 'EmotiCom', root_path, class: 'navbar-brand'%>
+  <ul class="nav navbar-nav pull-right">
+    <li class="nav-item">
+      <a class="btn btn-info-outline" href="#">Signup</a>
+    </li>
+    <li class="nav-item">
+      <a class="btn btn-primary-outline" href="#">Login</a>
+    </li>
+  </ul>
+</nav>
 
 <div class="container">
   <%= yield %>
