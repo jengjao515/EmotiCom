@@ -29,6 +29,7 @@ class UsersController < ApplicationController
 	def show
 		authorize
 		@user = User.where(id: current_user.id).first
+		@posts = @user.posts
 	end
 
 	def logout
@@ -38,6 +39,6 @@ class UsersController < ApplicationController
 
   private
   def user_params
-    params.require(:user).permit(:name, :username, :email, :password, :password_confirmation)
+    params.require(:user).permit(:name, :username, :email, :password)
   end
 end
