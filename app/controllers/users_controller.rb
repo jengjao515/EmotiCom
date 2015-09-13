@@ -29,6 +29,7 @@ class UsersController < ApplicationController
 	def show
 		authorize
 		@user = User.where(id: current_user.id).first
+		@posts = @user.posts
 	end
 
 	def logout

@@ -4,3 +4,7 @@ Hi, I am logged in.
 
 <%= link_to "Create a Post", new_post_path %>
 <%= link_to "Logout", logout_path %>
+<p>
+<% @posts.each do |post| %>
+	<%= post.description %><br>
+<% end %>

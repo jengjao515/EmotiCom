@@ -6,8 +6,14 @@ class PostsController < ApplicationController
 	end
 
 	def create
+		@user = User.where(id: current_user.id).first
 		@post = Post.new(post_params)
-		@post.user_id = current_user.id
+		@post.user_id = @user.id
+		if @post && @post.save
+			redirect_to @user
+		else
+			render 'new'
+		end
 	end
 
   private
