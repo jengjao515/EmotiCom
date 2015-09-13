@@ -1,7 +1,6 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+############################Seed Emojis
+counter = 600
+while counter < 638
+	Emotion.create(image_url: "emojis/1f" + counter.to_s + ".png")
+	counter += 1
+end

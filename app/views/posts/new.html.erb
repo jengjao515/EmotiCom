@@ -3,5 +3,7 @@
 <%= form_for @post do |f| %>
 	<%= f.label :content %>
 	<%= f.text_field :content, placeholder: "I am feeling like this because ..." %>
+	<%= f.label :mood %>
+	<%= f.text_field :mood %>
 	<%= f.submit %>
 <% end %>
