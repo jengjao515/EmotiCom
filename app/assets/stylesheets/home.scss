@@ -8,11 +8,13 @@ body {
 }
 
 .landing-spacer { 
-	margin-top: 100px;
+	margin-top: 150px;
 }
 
-.splash-bg { 
-  background: rgba(255, 255, 255, .8);
+.application-spacer { 
+	background: rgba(255, 255, 255, .8);
+  border-radius: 10px;
+	margin-top: 20px;
 }
 
 .splash-title { 

@@ -20,16 +20,22 @@
 <nav class="navbar navbar-dark bg-inverse">
   <%= link_to 'EmotiCom', root_path, class: 'navbar-brand'%>
   <ul class="nav navbar-nav pull-right">
-    <li class="nav-item">
-      <%= link_to 'Signup', new_user_path, class: 'btn btn-info-outline' %>
-    </li>
-    <li class="nav-item">
-      <%= link_to 'Login', new_user_path, class: 'btn btn-primary-outline' %>
-    </li>
+    <% if current_user %>
+      <li class="nav-item">
+        Welcome, <a href="/users/<%= current_user.id %>"><%= current_user.username %></a>
+      </li>
+    <% else %>
+      <li class="nav-item">
+        <%= link_to 'Signup', new_user_path, class: 'btn btn-info-outline' %>
+      </li>
+      <li class="nav-item">
+        <%= link_to 'Login', new_user_path, class: 'btn btn-primary-outline' %>
+      </li>
+    <% end %>
   </ul>
 </nav>
 
-<div class="container">
+<div class="container application-spacer">
   <%= yield %>
 </div>
 
