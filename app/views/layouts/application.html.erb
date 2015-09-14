@@ -21,10 +21,10 @@
   <%= link_to 'EmotiCom', root_path, class: 'navbar-brand'%>
   <ul class="nav navbar-nav pull-right">
     <li class="nav-item">
-      <a class="btn btn-info-outline" href="#">Signup</a>
+      <%= link_to 'Signup', new_user_path, class: 'btn btn-info-outline' %>
     </li>
     <li class="nav-item">
-      <a class="btn btn-primary-outline" href="#">Login</a>
+      <%= link_to 'Login', new_user_path, class: 'btn btn-primary-outline' %>
     </li>
   </ul>
 </nav>
