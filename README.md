@@ -14,15 +14,16 @@ _Future_
 ```
 * GoogleMaps API
 * D3.js
+* Rspec 
 ```
+
+
+###Wireframes
+![alt text](public/full-wireframe.png "Wireframes") 
 
 ###Schema
 ![alt text](public/schema.png "Schema Design")
 
-###Wireframes
-![alt text](public/splash-page.png "Splash Page") 
-![alt text](public/userhomepage.png "User Homepage")
-![alt text](public/mood-page.png "Create a Post")
 
 ###User Stories
 ```
