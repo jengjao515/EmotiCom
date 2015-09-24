@@ -1,8 +1,9 @@
 class CreateEmotions < ActiveRecord::Migration
   def change
     create_table :emotions do |t|
-      t.string :link
-      t.string :scale
+      t.integer :rating
+      t.string :image_url
+      t.text :description
 
       t.timestamps null: false
     end
