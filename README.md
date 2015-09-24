@@ -42,3 +42,8 @@ As a user, I want to...
 * Create a mobile-app version
 * Decoupled
 ```
+
+### Keeping Organized
+Using Trello to keep track of features
+![alt text](public/trello.png "Trello Board")
+
