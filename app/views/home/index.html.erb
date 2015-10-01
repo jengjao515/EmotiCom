@@ -1,9 +1,17 @@
-<div class="landing-spacer"></div>
-
-<div class="row">
-	<div class="col-md-12 splash-bg">
-			<p align=center>welcome to</p>
-			<div class="splash-title">emoticom</div>
-			<div class="lineheight-spacer"><%= link_to 'Signup', new_user_path, class: 'btn btn-info-outline' %></div>
+<div class="row ">
+	<div class="col-md-6">
+		<div class="form-group login-form landingpage-back">
+			<%= form_for users_path do |f| %>
+				<%= f.email_field :email, class: 'form-control', placeholder: "Email" %>
+				<%= f.password_field :password, class: 'form-control', placeholder: "Password" %>
+				<br/><%= f.submit "Login", class: "btn btn-warning" %>
+						<a href="#" class="btn btn-info" id="twitterLogin" >Twitter Login</a>
+			<% end %>			
+		</div>
 	</div>
+
+	<div class="col-md-6">
+		<h3 class="emoticom-bottom">@EmotiCom</h3>
+	</div>
+
 </div>

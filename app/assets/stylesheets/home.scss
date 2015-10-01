@@ -4,24 +4,24 @@
 
 body { 
 	background-image: url('../background.png');
-	background-repeat: repeat;
+	background-position: top center;
 }
 
-.landing-spacer { 
-	margin-top: 100px;
+.landingpage-back { 
+	background: rgba(255, 255, 255, .9);
 }
+// .landing-spacer { 
+// 	margin-top: 100px;
+// }
 
-.splash-bg { 
-  background: rgba(255, 255, 255, .8);
-}
 
-.splash-title { 
-	font-size: 60px;
-	line-height: 10px;
-	text-align: center;
-}
+// .splash-title { 
+// 	font-size: 60px;
+// 	line-height: 10px;
+// 	text-align: center;
+// }
 
-.lineheight-spacer { 
-	margin-top: 30px;
-	text-align: center;
-}
+// .lineheight-spacer { 
+// 	margin-top: 30px;
+// 	text-align: center;
+// }
